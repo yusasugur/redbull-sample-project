@@ -1,0 +1,58 @@
+.landing-container {
+    width: 100%;
+    height: 600px;
+    background-image: url('../Assets/redbull-bg.jpg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.landing-box {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.landing-detail-container {
+    width: 100%;
+    height: 830px;
+    display: flex;
+}
+
+.landing-stats-container {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    background-image: url('../Assets/redbull-stats.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-payinfo-container {
+    width: 100%;
+    height: 640px;
+    display: flex;
+}
+
+.landing-footer-container {
+    width: 100%;
+    height: 700px;
+    background-color: #ff733c;
+}
+
+@media screen and (max-width: 1200px) {
+    .landing-detail-container {
+        height: 1000px;
+    }
+    .landing-stats-container {
+        height: 800px;
+    }
+
+    .landing-payinfo-container {
+        height: 700px;
+    }
+}

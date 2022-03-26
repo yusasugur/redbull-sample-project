@@ -1,0 +1,89 @@
+.landing-stats-box {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    color: white;
+}
+.stats-header,
+.stats-sub-header {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.stats {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats p {
+    font-size: 58px;
+    font-weight: 600;
+    color: yellow;
+}
+
+.stats span {
+    font-size: 28px;
+}
+
+.stats div {
+    width: 240px;
+}
+
+.stats-header p {
+    font-weight: 800;
+    font-size: 33px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.stats-sub-header p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+.stats-sub-header span {
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.stats-detail p {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .stats {
+        flex-direction: column;
+        height: 80%;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .stats-sub-header,
+    .stats-header {
+        height: 10%;
+    }
+
+    .stats-header p {
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+    .stats p {
+        font-size: 44px;
+        line-height: 48px;
+    }
+
+    .stats-detail p {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

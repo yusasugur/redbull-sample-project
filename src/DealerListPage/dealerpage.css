@@ -1,0 +1,127 @@
+.dealer-container {
+    min-height: 1000px;
+    width: 100%;
+    background-color: #1d19ac;
+    display: flex;
+    align-items: center;
+}
+
+.dealer-box {
+    width: 770px;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.dealer-box-navigation {
+    display: flex;
+    justify-content: flex-starts;
+    align-items: center;
+    color: white;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.dealer-box > header {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 52px;
+    color: white;
+}
+
+.dealer-search-container {
+    width: 100%;
+    height: 143px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 27px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.dealer-search-box {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.dealer-list-item-container {
+    width: 100%;
+    height: 340px;
+    background-color: white;
+    border-radius: 27px;
+    border: 1px solid black;
+    display: flex;
+    margin-top: 20px;
+}
+
+.dealer-list-item-box {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.company-info div {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #cdd2dc;
+    height: 56px;
+    align-items: center;
+}
+
+.company-info div:last-child {
+    border-bottom: 1px solid #cdd2dc;
+}
+
+.company-info p span {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.company-info p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.dealer-list-item-box header {
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 32px;
+    padding-bottom: 24px;
+}
+
+.dealer-box a {
+    text-decoration: none;
+    color: white;
+}
+
+.dealer-box > div:last-child {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .dealer-container {
+        display: block;
+    }
+
+    .dealer-box {
+        padding-top: 96px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .company-info div {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .dealer-box > header {
+        font-size: 32px;
+    }
+}

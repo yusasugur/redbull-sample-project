@@ -1,0 +1,178 @@
+.container {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.7fr 0.3fr 1fr;
+    grid-template-rows: 1.4fr 0.6fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        'upperleft right right'
+        'lowerleft right right'
+        'lowerleft right right';
+}
+
+.right {
+    grid-area: right;
+    text-align: center;
+}
+
+.upperleft {
+    grid-area: upperleft;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.upperleft div:nth-child(1) p {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.upperleft div:nth-child(2) p {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.upperleft div:nth-child(3) p {
+    font-size: 58px;
+    line-height: 60px;
+    color: #e21b4d;
+    font-weight: 600;
+}
+
+.lowerleft {
+    grid-area: lowerleft;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lowerleft p span {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.lowerleft p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.lowerleft ul {
+    list-style-type: none;
+}
+
+.lowerleft li {
+    /* You need to turn on relative positioning so the line is placed relative to the item rather than absolutely on the page */
+    position: relative;
+
+    /* Use padding to space things out rather than margins as the line would get broken up otherwise */
+    margin: 0;
+    padding-bottom: 1em;
+    padding-left: 20px;
+}
+
+.lowerleft li:before {
+    background-color: black;
+    width: 2px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 5px;
+    z-index: -1;
+}
+
+.lowerleft li:first-child:before {
+    top: 15px;
+}
+
+/* Stop the line short on the final list item */
+.lowerleft li:last-child:before {
+    height: 20px;
+}
+
+/* Styles for the SVG bullet points */
+.bullet {
+    margin-left: -26px;
+    width: 12px;
+    fill: black;
+    float: left;
+    padding-right: 10px;
+}
+.bullet.big {
+    width: 16px;
+    margin-left: -22px;
+    padding-right: 8px;
+}
+
+.lowerleft button {
+    height: 43px;
+    width: 220px;
+    border-radius: 27px;
+    border: none;
+    background-color: #000b8d;
+    cursor: pointer;
+    transition: 350ms;
+    color: white;
+}
+
+.lowerleft button:hover {
+    background-color: #e21b4d;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 0.6fr 1.4fr;
+        grid-template-rows: 1fr 0.3fr 1.7fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            'upperleft upperleft right'
+            'upperleft upperleft right'
+            'lowerleft lowerleft lowerleft';
+        height: 100%;
+    }
+
+    .upperleft {
+        grid-area: upperleft;
+    }
+
+    .right {
+        grid-area: right;
+    }
+
+    .lowerleft {
+        grid-area: lowerleft;
+    }
+
+    .right img {
+        height: 100%;
+    }
+
+    .upperleft div:nth-child(1) p {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .upperleft div:nth-child(2) p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .upperleft div:nth-child(3) p {
+        font-size: 33px;
+        line-height: 36px;
+    }
+
+    .upperleft,
+    .lowerleft {
+        justify-content: space-evenly;
+    }
+}

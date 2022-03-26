@@ -1,0 +1,245 @@
+.register-container {
+    height: 1700px;
+    width: 100%;
+    background-color: #1d19ac;
+    display: flex;
+    align-items: center;
+}
+
+.register-box {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.register-form-container {
+    height: 90%;
+    width: 75%;
+    margin: auto;
+}
+
+.register-form-header-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-form-navigator {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.register-form-header {
+    color: white;
+}
+
+.register-form-header div {
+    padding-bottom: 15px;
+}
+
+.register-form-mainpage {
+    display: flex;
+    width: 30%;
+    align-content: center;
+    align-items: center;
+}
+
+.register-form-mainpage p {
+    margin-left: 5px;
+}
+
+.register-form-header header {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 52px;
+}
+
+.register-form-header p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.register-form-header span {
+    font-weight: 900;
+}
+
+.register-form {
+    width: 100%;
+    min-height: 850px;
+    padding-top: 15px;
+    background-color: white;
+    border-radius: 27px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.register-form-box {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.form-box-header p span {
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.form-box-header p {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.inputRounded .MuiOutlinedInput-root {
+    border-radius: 27px;
+    height: 40px;
+}
+
+.postcode-dropdown {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    background: white;
+    border-radius: 27px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 350ms;
+}
+
+.postcode-dropdown div {
+    height: 90%;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 95%;
+}
+
+.postcode-dropdown.down {
+    height: 0px;
+    border: none;
+}
+
+.postcode-dropdown ul {
+    list-style: none;
+    height: 90%;
+}
+
+.postcode-dropdown li {
+    height: 40px;
+    width: 100%;
+    transition: 350ms;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.postcode-dropdown p {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.postcode-dropdown span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.postcode-dropdown li:hover {
+    background: #dce6e6;
+}
+
+.form-input-label {
+    padding-top: 20px;
+    display: flex;
+}
+
+.form-input-label p {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 6px;
+}
+.form-service-subheader {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+    padding-bottom: 6px;
+}
+
+.form-service-box {
+    display: flex;
+}
+.form-service-choice {
+    width: 130px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: 350ms;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-service-choice.active {
+    background: #1b1b1b;
+    color: white;
+}
+
+.form-service-choice.active:hover {
+    background: #1b1b1b;
+}
+
+.form-service-choice:hover {
+    background: #dce6e6;
+}
+
+.form-service-choice img {
+    padding-top: 6px;
+}
+
+.form-box-footer {
+    padding-top: 32px;
+}
+
+.form-box-footer button {
+    height: 43px;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: #000b8d;
+    cursor: pointer;
+    transition: 350ms;
+    color: wheat;
+}
+
+.form-box-footer button:hover {
+    color: #d9d4ce;
+}
+
+.form-box-footer p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 24px;
+}
+.form-box-footer p span {
+    color: #1d19ac;
+}
+
+@media screen and (max-width: 1200px) {
+    .register-box {
+        height: 100%;
+    }
+
+    .register-form-container {
+        width: 100%;
+    }
+}
