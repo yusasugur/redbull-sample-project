@@ -4,15 +4,24 @@ import loginIcon from '../../Assets/loginIcon.png';
 import registerIcon from '../../Assets/registerIcon.png';
 import hamburgerIcon from '../../Assets/hamburger.svg';
 import './landingpagenavbar.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const LandingPageNavbar = () => {
     const [menu, setMenu] = useState(0);
     const navigate = useNavigate();
+    const location = useLocation();
+
+    console.log();
 
     return (
         <div>
-            <div className='landing-navbar desktop'>
+            <div
+                className={
+                    location.pathname === '/'
+                        ? 'landing-navbar desktop main'
+                        : 'landing-navbar desktop'
+                }
+            >
                 <div className='landing-navbar-left-right'>
                     <a href='#'>Apply</a>
                     <a href='#'>How it works</a>
@@ -26,6 +35,7 @@ const LandingPageNavbar = () => {
                     <div
                         className='landing-navbar-right-1'
                         onClick={() => {
+                            setMenu(0);
                             navigate('/register');
                         }}
                     >
@@ -55,7 +65,7 @@ const LandingPageNavbar = () => {
                         </div>
                         <div className='nt2'>
                             <img
-                                onClick={() => setMenu(!menu)}
+                                onClick={() => setMenu((prev) => !prev)}
                                 className='mobile-hmbrg-button'
                                 src={hamburgerIcon}
                             />
@@ -66,6 +76,7 @@ const LandingPageNavbar = () => {
                         <div>
                             <a
                                 onClick={() => {
+                                    setMenu(0);
                                     navigate('/register');
                                 }}
                                 style={{ cursor: 'pointer' }}
@@ -80,6 +91,7 @@ const LandingPageNavbar = () => {
                             <a>Partner Sign In</a>
                             <a
                                 onClick={() => {
+                                    setMenu(0);
                                     navigate('/register');
                                 }}
                                 style={{ cursor: 'pointer' }}

@@ -18,7 +18,7 @@
     background-color: white;
     position: absolute;
     bottom: 50px;
-    right: 100px;
+    left: 30px;
     border-radius: 27px;
 }
 
@@ -61,7 +61,7 @@
         width: 350px;
         height: 350px;
         left: 0;
-        top: 145px;
+        bottom: -200px;
     }
     .footer-image {
         border-bottom-right-radius: 50px;

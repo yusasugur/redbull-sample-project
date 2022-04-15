@@ -145,6 +145,8 @@
 
     .right {
         grid-area: right;
+        display: flex;
+        align-items: center;
     }
 
     .lowerleft {
@@ -152,7 +154,7 @@
     }
 
     .right img {
-        height: 100%;
+        width: 100%;
     }
 
     .upperleft div:nth-child(1) p {

@@ -4,14 +4,19 @@
     background-color: #ffd300;
     border-radius: 27px;
     display: flex;
+    position: absolute;
     flex-direction: row;
     border: 1px solid black;
-    position: fixed;
     top: 50px;
     left: 0;
     right: 0;
     margin: auto;
     z-index: 1000;
+}
+
+.landing-navbar.desktop.main{
+    position: fixed;
+
 }
 
 .landing-navbar.mobile {
